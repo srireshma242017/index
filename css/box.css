@@ -1,0 +1,25 @@
+h1{
+    margin-top: 50px;
+    border-style:groove;
+    background-color:aqua;
+}
+p{
+    margin:50px;
+    border-style: ridge;
+    padding: 10px;
+    
+}
+.earlylife{
+    margin: 50px;
+    border-style: dotted;
+    padding: 20px;
+}
+.pictures{
+    background-image: url(../images/Pawan2.jpg);
+    padding: 250px;
+    background-repeat: repeat-x;
+    
+}
+body{
+    background-color: peachpuff;
+}
