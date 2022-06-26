@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            Simple calculator
+        </title>
+
+    </head>
+    <body>
+        <input type="text" id="calculator" value="" name="inputtextfield"><br><br>
+        <button onclick="result()">Submit</button>
+        <h1 id="ans">Result for the given input is </h1>
+        <script>
+            function result(){
+                var ele=document.getElementById("calculator").value;
+                var res=eval(ele);
+                document.getElementById("ans").textContent=
+                                        "Result for the given input is "+res;
+            }
+        </script>
+    </body>
+
+</html>

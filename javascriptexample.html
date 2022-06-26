@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function change(){
+                var element= document.getElementById("ai");
+                alert(element.innerHTML);
+                element.innerHTML="Dept of Artificial Intelligence";
+                var element1=document.getElementsByClassName("result");
+                element1[1].innerHTML="results will be updated soon";
+                var element2=document.getElementsByTagName("h2")
+                element2[0].innerHTML+=" of II-II";
+                var element3=document.getElementsByTagName("h2");
+                element3[0].align="center";
+            }
+            function changedata(ele){
+                ele.innerHTML="II-II results"
+
+            }
+        </script>
+
+    </head>
+    <body>
+        <h1 id="ai" onclick="this.innerHTML='This is an Amazing branch'">Dept of AI</h1>
+        <p>Welcome to WAD class</p>
+        <h2 class="result" align="left" onclick="changedata(this)">Results</h2>
+        <span class="result"></span>
+        <input type="button" value="change date" onclick="change()">
+    </body>
+</html>

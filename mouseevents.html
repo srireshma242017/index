@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Mouse Events</title>
+    </head>
+    <body>
+        <h2>On Click Event</h2>
+        <input  class="event" type="button" value="On Click Event" onclick="clickevent()">
+        
+        <h2>Mouse over event and Mouse out event</h2>
+         <img onmouseover="big(this)" onmouseout="normal(this)" src="images/collegelogo.jpg"  >
+        <h1 class="demo" onmousedown="mouseevent()" onmouseup="mouseupevent()">On mouse down and up event </h1>
+        
+        
+        <script>
+            function clickevent(){
+                document.write("This is click event");
+            }
+            function big(x){
+                x.style.width="150px";
+                x.style.height="150px";
+
+                
+            }
+            function normal(x){
+                x.style.width="80px";
+                x.style.height="80px";
+            }
+            function mouseevent(){
+                var ele1=document.getElementsByClassName("demo");
+                ele1[0].style.color="green"
+            }
+            function mouseupevent(){
+                 var ele2=document.getElementsByClassName("demo");
+                 ele2[0].style.color="blue";
+            }
+            
+
+        </script>
+
+    </body>
+</html>
